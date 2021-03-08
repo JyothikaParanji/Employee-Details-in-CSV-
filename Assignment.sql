@@ -40,23 +40,23 @@ create table Employee_Address(
   depid int(10) references department(id)
  );
 
-insert into employee(id,firstname,lastname,empid) values (1,'Paranji Muralikumar','Jyothika','872544'),
-(2,'Mettu','Sai bhargav','872547');
+insert into employee(id,firstname,lastname,empid) values (1,'Paranji Muralikumar','Jyothika','123456'),
+(2,'M','Sai','122550');
 
 
 insert into address(id,line1,line2,line3,city,state,zip,country,type,empid)
- values(1,'8/112','Eswaramma Colony','Nehru bazzar','Madanapalli','AndhraPradesh','517325','India','Home','872544'),
-(2,'5/12','Gandhi Colony','Guntur','AndhraPradesh','554821','India','Temporary','872547');
+ values(1,'8/112','Eswaramma Colony','Nehru bazzar','Madanapalli','AndhraPradesh','517325','India','Home','123456'),
+(2,'5/12','Gandhi Colony','Guntur','AndhraPradesh','554821','India','Temporary','122550');
 
 
-insert into department(id,name,empid) values(1,'MDU','872544'),(2,'EAS','872547');
+insert into department(id,name,empid) values(1,'MDU','123456'),(2,'EAS','122550');
 
 
-insert into Employee_Address(empid,addid) values('872544','1'),
- ('872550','2');
+insert into Employee_Address(empid,addid) values('123456','1'),
+ ('122550','2');
  
  
- insert into EmployeeDepartment(empid,depid) values('872544','1'),('872547','2');
+ insert into EmployeeDepartment(empid,depid) values('123456','1'),('122550','2');
  
  
 select e.empid,e.firstname,e.lastname,a.line1,a.line2,a.line3,a.city,a.state,a.zip,a.country,
